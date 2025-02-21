@@ -36,28 +36,28 @@ type Bech32Prefix int
 // Constants that define Bech32 address prefixes. Every network is assigned
 // a unique prefix.
 const (
-	// Unknown/Erroneous prefix
-	Bech32PrefixUnknown Bech32Prefix = iota
+        // Unknown/Erroneous prefix
+        Bech32PrefixUnknown Bech32Prefix = iota
 
-	// Prefix for the main network.
-	Bech32PrefixKaspa
+        // Prefix for the main network.
+        Bech32PrefixDogesilver
 
-	// Prefix for the dev network.
-	Bech32PrefixKaspaDev
+        // Prefix for the dev network.
+        Bech32PrefixDogesilverDev
 
-	// Prefix for the test network.
-	Bech32PrefixKaspaTest
+        // Prefix for the test network.
+        Bech32PrefixDogesilverTest
 
-	// Prefix for the simulation network.
-	Bech32PrefixKaspaSim
+        // Prefix for the simulation network.
+        Bech32PrefixDogesilverSim
 )
 
 // Map from strings to Bech32 address prefix constants for parsing purposes.
 var stringsToBech32Prefixes = map[string]Bech32Prefix{
-	"kaspa":     Bech32PrefixKaspa,
-	"kaspadev":  Bech32PrefixKaspaDev,
-	"kaspatest": Bech32PrefixKaspaTest,
-	"kaspasim":  Bech32PrefixKaspaSim,
+        "dogesilver":     Bech32PrefixDogesilver,
+        "dogesilverdev":  Bech32PrefixDogesilverDev,
+        "dogesilvertest": Bech32PrefixDogesilverTest,
+        "dogesilversim":  Bech32PrefixDogesilverSim,
 }
 
 // ParsePrefix attempts to parse a Bech32 address prefix.
